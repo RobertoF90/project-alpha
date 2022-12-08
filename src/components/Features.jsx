@@ -7,27 +7,25 @@ import {
 
 const features = [
   {
-    name: "Competitive exchange rates",
+    name: "Sito Web - Le basi della tua visibilità online.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Sviluppiamo il tuo sito da zero o aggiorniamo quello che hai già.",
     icon: GlobeAltIcon,
   },
   {
-    name: "No hidden fees",
+    name: "Social Media - La tua vetrina a portata di click",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Creiamo e miglioriamo la tua presenza su Facebook e Instagram.",
     icon: ScaleIcon,
   },
   {
-    name: "Transfers are instant",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    name: "Copywriting - Una voce chiara che parla ai tuoi clienti.",
+    description: "Costruiamo e ottimizziamo la tua comunicazione online.",
     icon: BoltIcon,
   },
   {
-    name: "Mobile notifications",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    name: "Web App - Lo strumento PRO per distinguerti",
+    description: "Sviluppiamo l'app per gestire la tua attività.",
     icon: DevicePhoneMobileIcon,
   },
 ];
@@ -37,9 +35,13 @@ export default function Example() {
     <div className="bg-white py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:text-center">
-          <h2 className="text-lg font-semibold leading-8 text-indigo-600">
-            Transactions
+          <h2 className="text-3x1 sm:text-4xl font-semibold leading-8 text-indigo-600">
+            COME?
           </h2>
+
+          {/* <h2 className="text-lg font-semibold leading-8 text-indigo-600">
+            Come
+          </h2> */}
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             A better way to send money
           </p>

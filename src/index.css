@@ -72,3 +72,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.text-green-mine {
+  color: linear-gradient(to bottom, #acff8a, #406b48);
+
+  background: -webkit-linear-gradient(#acff8a, #406b48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+import logo from "./../assets/logo.png";
+
 const navigation = [
   { name: "Product", href: "#" },
   { name: "Features", href: "#" },
@@ -44,17 +46,13 @@ export default function Example() {
       <div className="px-6 pt-6 lg:px-8">
         <div>
           <nav
-            className="flex h-9 items-center justify-between"
+            className="flex  items-center justify-between"
             aria-label="Global"
           >
-            <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-              <a href="#" className="-m-1.5 p-1.5">
+            <div className="flex lg:min-w-0 lg:flex-1 h-16" aria-label="Global">
+              <a href="#" className="h-16 -m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <img className="h-16" src={logo} alt="" />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -145,7 +143,7 @@ export default function Example() {
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
             <div>
-              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+              {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   <span className="text-gray-600">
                     Announcing our next round of funding.{" "}
@@ -155,16 +153,24 @@ export default function Example() {
                     </a>
                   </span>
                 </div>
-              </div>
+              </div> */}
               <div>
-                <h1 className="text-4xl text-black font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Data to enrich your online business
-                </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  Vuoi aumentare il fatturato a 123849403 €? Vuoi raggiungere 1
+                  milione di follower in 3 mosse?
                 </p>
+
+                <p className="mt-4 text-lg leading-8 text-gray-600 sm:text-center font-bold">
+                  Ci dispiace, ma questo sito non fa per te. Non vendiamo
+                  miracoli, ma...
+                </p>
+
+                <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center"></p>
+
+                <h1 className="text-4xl text-black font-bold tracking-tight sm:text-center sm:text-6xl">
+                  Ti aiutiamo a costruire la tua{" "}
+                  <span className="text-green-mine">visibilità </span> online
+                </h1>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <a
                     href="#"
