@@ -90,24 +90,37 @@ img {
   color: #fff;
   font-size: 1.8rem;
 
-  background-color: transparent;
-
   border-radius: 24px;
   border: 1px solid #fff;
+
+  background-color: #00000077;
+
+  transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #47804677, #72007477);
+
+  cursor: pointer;
 }
 
 .btn--cta {
   width: fit-content;
-  background: linear-gradient(
+
+  /* background: linear-gradient(
     to right,
     var(--secondary-green),
     var(--primary-green),
     var(--primary-purple),
     var(--secondary-purple)
-  );
+  ); */
   border: none;
 
   margin-top: 2rem;
+}
+
+.btn--cta:hover {
+  cursor: pointer;
 }
 
 /* HERO */
@@ -144,6 +157,30 @@ img {
   top: 50%;
 }
 
+.scroll:before {
+  display: inline-block;
+  content: "";
+  width: 0.5rem;
+  height: 8rem;
+  background-color: #fff;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.scroll::after {
+  position: absolute;
+  bottom: 0.5rem;
+  left: -0.94rem;
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-right: 0.4rem solid #fff;
+  border-top: 0.4rem solid #fff;
+  transform: rotate(135deg);
+}
+
 .header__text-box {
   position: relative;
   height: 100vh;
@@ -168,6 +205,17 @@ img {
 
   font-size: 2.4rem;
 }
+/* 
+.btn--header {
+  background-color: #00000077;
+  transition: background-color 0.2s linear;
+}
+
+.btn--header:hover {
+  background: linear-gradient(to right, #47804677, #72007477);
+
+  cursor: pointer;
+} */
 
 .header__card-container {
   display: flex;
@@ -188,12 +236,19 @@ img {
 
   border-radius: 24px;
 
-  background-color: var(--primary-purple);
-  transition: background-color 0.2s linear;
+  /* background-color: var(--primary-purple); */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+
+  transition: all 0.2s linear;
 }
 
 .card:hover {
-  background-color: var(--primary-green);
+  background: linear-gradient(to top right, #47804677, #72007477);
+  backdrop-filter: blur(4px);
+
+  transform: translateY(-3px);
+  box-shadow: 0px 1px 1px 1px #00000077;
 }
 
 .card--icon {
